@@ -95,16 +95,19 @@
 /* ================= CADASTRO ================= */
 
 .texto-cadastro {
-    text-align: center;
-    margin-top: 20px;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
     color: #666;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .texto-cadastro a {
     color: rgb(28, 98, 164);
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 550;
     transition: 0.3s;
 }
 
@@ -124,4 +127,37 @@
         font-size: 34px;
     }
 
+}
+/* ================= LEMBRAR LOGIN ================= */
+
+.lembrar-login{
+
+    margin-top: 10px;
+    margin-bottom: 25px;
+
+    display: flex;
+    align-items: center;
+}
+
+.lembrar-login label{
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #555;
+    font-size: 15px;
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
+.lembrar-login input{
+
+    width: 16px;
+    height: 16px;
+
+    accent-color: rgb(11, 200, 80);
+
+    cursor: pointer;
 }

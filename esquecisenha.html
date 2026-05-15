@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Conecta Singular - Esqueci a Senha</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="style/esquecisenha.css">
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body class="pagina-esqueci">
+
+    <!-- ================= MENU ================= -->
+
+    <nav>
+
+        <ul class="menu">
+
+            <li class="logo">
+                <a href="index.html">
+                    <img src="images/logo-home.png" alt="Logo">
+                </a>
+            </li>
+
+            <li><a class="botao1" href="index.html">INÍCIO</a></li>
+
+            <li><a class="botao2" href="vagas.html">VAGAS</a></li>
+
+            <li><a class="botao3" href="sobreoprojeto.html">SOBRE O PROJETO</a></li>
+
+            <li><a class="botao4" href="contatos.html">CONTATOS</a></li>
+
+            <li><a class="botao1" href="empresasparceiras.html">EMPRESAS PARCEIRAS</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- ================= ESQUECI SENHA ================= -->
+
+    <section class="secao-esqueci">
+
+        <div class="card-esqueci">
+
+            <i class="fa-solid fa-lock icone-esqueci"></i>
+
+            <h1 class="titulo-esqueci">
+                Esqueceu sua senha?
+            </h1>
+
+            <p class="texto-esqueci">
+                Digite seu e-mail abaixo para receber as instruções de recuperação.
+            </p>
+
+            <form id="form-esqueci">
+
+                <div class="grupo-input">
+
+                    <label for="email">
+                        E-mail
+                    </label>
+
+                    <input 
+                        type="email"
+                        id="email"
+                        placeholder="Digite seu e-mail"
+                        required
+                    >
+
+                </div>
+
+                <button type="submit" class="botao-esqueci">
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                    Enviar recuperação
+
+                </button>
+
+            </form>
+
+            <a href="login.html" class="voltar-login">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Voltar para login
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- SCRIPT -->
+
+    <script>
+
+        const form = document.getElementById("form-esqueci");
+
+        form.addEventListener("submit", function(event){
+
+            event.preventDefault();
+
+            const email = document.getElementById("email").value;
+
+            if(email !== ""){
+
+                alert("Um link de recuperação foi enviado para o e-mail: " + email);
+
+                window.location.href = "login.html";
+
+            }
+
+        });
+
+    </script>
+     <!-- ================= FOOTER ================= -->
+
+    <footer class="rodape-contatos">
+
+        <div class="rodape-conteudo">
+
+            <p>
+                &copy; 2026 Conecta Singular. Todos os direitos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Conecta Singular - Editar Perfil</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="style/editarperfil.css">
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body class="pagina-perfil">
+
+    <!-- ================= MENU ================= -->
+
+    <nav>
+
+        <ul class="menu">
+
+            <li class="logo">
+                <a href="index.html">
+                    <img src="images/logo-home.png" alt="Logo">
+                </a>
+            </li>
+
+            <li><a class="botao1" href="vagas-poslogin.html">VAGAS</a></li>
+
+            <li><a class="botao2" href="vagas-cadastradas.html">MINHAS VAGAS</a></li>
+
+            <li><a class="botao3" href="ouvidoria.html">OUVIDORIA</a></li>
+
+            <li><a class="botao4" href="mensagem.html">MENSAGENS</a></li>
+
+            <li>
+                <a class="botao-sair" href="index.html">
+                    <i class="fa-solid fa-right-to-bracket"></i> SAIR
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <!-- ================= PERFIL ================= -->
+
+    <section class="secao-perfil">
+
+        <div class="card-perfil">
+
+            <!-- FOTO -->
+
+            <div class="area-foto">
+
+                <img 
+                    src="images/perfil.png"
+                    alt="Foto de Perfil"
+                    class="foto-perfil"
+                >
+
+                <label class="alterar-foto">
+                    Alterar Foto
+                    <input type="file" hidden>
+                </label>
+
+                <input type="text" class="input-editar nome-input" value="Pedro Henrique Lantezaski">
+
+                <input type="text" class="input-editar cargo-input" value="Desenvolvedor Front-End">
+
+                <!-- INFORMAÇÕES -->
+
+                <div class="informacoes-perfil">
+
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <input type="email" class="input-editar" value="pedrohenrique@gmail.com">
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone"></i>
+
+                        <input type="text" class="input-editar" value="(11) 98955-7412">
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <input type="text" class="input-editar" value="São Paulo - SP">
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fa-solid fa-cake-candles"></i>
+
+                        <input type="text" class="input-editar" value="28 anos">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- INFORMAÇÕES -->
+
+            <div class="info-perfil">
+
+                <!-- SOBRE -->
+
+                <div class="bloco-info">
+
+                    <h2>
+                        <i class="fa-solid fa-user"></i>
+                        Sobre Mim
+                    </h2>
+
+                    <textarea class="textarea-editar">
+Sou uma pessoa dedicada, organizada e apaixonada por tecnologia e inclusão digital.
+                    </textarea>
+
+                </div>
+
+                <!-- HABILIDADES -->
+
+                <div class="bloco-info">
+
+                    <h2>
+                        <i class="fa-solid fa-code"></i>
+                        Habilidades
+                    </h2>
+
+                    <textarea class="textarea-editar">
+HTML, CSS, JavaScript, Organização, Criatividade
+                    </textarea>
+
+                </div>
+
+                <!-- CURRÍCULO -->
+
+                <div class="bloco-info">
+
+                    <h2>
+                        <i class="fa-solid fa-file-lines"></i>
+                        Currículo
+                    </h2>
+
+                    <textarea class="textarea-grande">
+Objetivo Profissional:
+Busco oportunidades na área de tecnologia e desenvolvimento web.
+
+Formação:
+- Ciências da Computação - FMU
+- Cloud Computing - Senai
+- Inteligência Artificial - Senai
+
+Conhecimentos:
+- HTML
+- CSS
+- JavaScript
+- Lógica de Programação
+
+Idiomas:
+- Inglês Fluente
+                    </textarea>
+
+                </div>
+
+                <!-- BOTÃO -->
+
+                <button class="botao-salvar" id="btnSalvar">
+
+                    <i class="fa-solid fa-floppy-disk"></i>
+
+                    Salvar Alterações
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="rodape-contatos">
+
+        <div class="rodape-conteudo">
+
+            <p>
+                &copy; 2026 Conecta Singular. Todos os direitos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="scripts/editarperfil.js"></script>
+
+</body>
+
+</html>

@@ -13,7 +13,7 @@ form.addEventListener("submit", function(event) {
 
     if(email === emailCorreto && senha === senhaCorreta) {
 
-        alert("Login realizado com sucesso!");
+        
 
         // REDIRECIONA
         window.location.href = "perfil.html";

@@ -205,3 +205,23 @@
     color: rgb(28, 98, 164);
     font-size: 18px;
 }
+/* ================= BOTÃO EDITAR ================= */
+
+.botao-editar {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 25px;
+    background-color: rgb(28, 98, 164);
+    color: white;
+    padding: 12px 22px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.botao-editar:hover {
+    background-color: rgb(20, 74, 126);
+    transform: translateY(-2px);
+}
