@@ -1,0 +1,207 @@
+/* ================= BODY ================= */
+
+.pagina-perfil {
+    background: radial-gradient(circle at top, #e6e6eb, rgb(211, 211, 215));
+    min-height: 100vh;
+}
+
+/* ================= ÁREA PERFIL ================= */
+
+.secao-perfil {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* ================= CARD ================= */
+
+.card-perfil {
+    width: 100%;
+    max-width: 1100px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+}
+
+/* ================= FOTO ================= */
+
+.area-foto {
+    background-color: rgb(28, 98, 164);
+    padding: 50px 30px;
+    text-align: center;
+    color: white;
+}
+
+.foto-perfil {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid rgb(85, 215, 131);
+    margin-bottom: 25px;
+}
+
+.nome-perfil {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cargo-perfil {
+    font-size: 18px;
+    color: #dfefff;
+}
+
+/* ================= INFORMAÇÕES ================= */
+
+.info-perfil {
+    padding: 50px;
+}
+
+.bloco-info {
+    margin-bottom: 40px;
+}
+
+.bloco-info h2 {
+    color: rgb(28, 98, 164);
+    font-size: 24px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bloco-info p {
+    color: #444;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+/* ================= TAGS ================= */
+
+.tags-habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.tags-habilidades span {
+    background-color: rgba(28, 98, 164, 0.1);
+    color: rgb(28, 98, 164);
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* ================= BOTÃO ================= */
+
+.botao-curriculo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(85, 215, 131);
+    color: white;
+    text-decoration: none;
+    padding: 14px 24px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.botao-curriculo:hover {
+    background-color: rgb(60, 180, 105);
+}
+
+/* ================= RESPONSIVO ================= */
+
+@media (max-width: 900px) {
+
+    .card-perfil {
+        grid-template-columns: 1fr;
+    }
+
+    .info-perfil {
+        padding: 35px 25px;
+    }
+
+    .area-foto {
+        padding: 40px 20px;
+    }
+
+    .foto-perfil {
+        width: 150px;
+        height: 150px;
+    }
+
+}
+/* ================= CURRÍCULO ================= */
+
+.curriculo-box {
+    background-color: #f7f9fc;
+    border-radius: 15px;
+    padding: 30px;
+    border-left: 6px solid rgb(85, 215, 131);
+    margin-bottom: 25px;
+}
+
+.curriculo-item {
+    margin-bottom: 30px;
+}
+
+.curriculo-item:last-child {
+    margin-bottom: 0;
+}
+
+.curriculo-item h3 {
+    color: rgb(28, 98, 164);
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.curriculo-item p {
+    color: #444;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.lista-curriculo {
+    padding-left: 20px;
+}
+
+.lista-curriculo li {
+    color: #444;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+/* ================= INFORMAÇÕES PERFIL ================= */
+
+.informacoes-perfil {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #444;
+    font-size: 16px;
+    background-color: #f4f7fb;
+    padding: 12px 18px;
+    border-radius: 12px;
+    width: fit-content;
+}
+
+.info-item i {
+    color: rgb(28, 98, 164);
+    font-size: 18px;
+}

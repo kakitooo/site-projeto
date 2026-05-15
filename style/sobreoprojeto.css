@@ -1,0 +1,265 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at top, #e6e6eb, rgb(211, 211, 215));
+    min-height: 100vh;
+   
+}
+
+/* ================= BANNER ================= */
+
+.banner-sobre {
+    background-color: rgba(28, 98, 164, 0.6);
+    text-align: center;
+    padding: 70px 20px;
+    border-bottom: 4px solid rgb(85, 215, 131);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.titulo-banner-sobre {
+    color: white;
+    font-size: 58px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.texto-banner-sobre {
+    color: #e7e7e7;
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* ================= SEÇÕES ================= */
+
+.secao-projeto,
+.secao-objetivos,
+.secao-equipe,
+.secao-compromisso {
+    max-width: 1150px;
+    margin: 70px auto;
+    padding: 0 20px;
+}
+
+.titulo-secao-sobre {
+    text-align: center;
+    color: rgb(28, 98, 164);
+    font-size: 42px;
+    margin-bottom: 50px;
+}
+
+/* ================= PROJETO ================= */
+
+.container-projeto {
+    background-color: white;
+    border-radius: 15px;
+    padding: 45px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border-left: 8px solid rgb(85, 215, 131);
+}
+
+.texto-projeto {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+/* ================= OBJETIVOS ================= */
+
+.container-objetivos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+}
+
+.card-objetivo {
+    background-color: white;
+    border-radius: 12px;
+    padding: 35px 25px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* CORES DOS CARDS */
+
+.card-vaga-azul {
+    border-top: 8px solid #0056b3;
+}
+
+.card-vaga-verde {
+    border-top: 8px solid #28a745;
+}
+
+.card-vaga-amarelo {
+    border-top: 8px solid #ffb300;
+}
+
+.card-vaga-vermelho {
+    border-top: 8px solid #dc3545;
+}
+
+.icone-objetivo {
+    font-size: 45px;
+    color: rgb(28, 98, 164);
+    margin-bottom: 20px;
+}
+
+.card-objetivo h3 {
+    color: rgb(28, 98, 164);
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.card-objetivo p {
+    color: #444;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* ================= EQUIPE ================= */
+
+.container-equipe {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 35px;
+}
+
+.card-equipe {
+    background-color: white;
+    border-radius: 12px;
+    padding: 35px 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.card-equipe:hover {
+    transform: translateY(-8px);
+}
+
+.nome-integrante {
+    color: rgb(28, 98, 164);
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.area-integrante {
+    display: inline-block;
+    background-color: rgba(28, 98, 164, 0.1);
+    color: rgb(28, 98, 164);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.frase-integrante {
+    color: #555;
+    font-style: italic;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.info-integrante {
+    margin-top: 18px;
+}
+
+.info-integrante strong {
+    color: rgb(28, 98, 164);
+    font-size: 16px;
+}
+
+.info-integrante p {
+    color: #333;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-top: 8px;
+}
+
+/* ================= COMPROMISSO ================= */
+
+.container-compromisso {
+    background-color: rgb(28, 98, 164);
+    border-radius: 15px;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.container-compromisso h2 {
+    color: white;
+    font-size: 42px;
+    margin-bottom: 25px;
+}
+
+.container-compromisso p {
+    color: #f1f1f1;
+    font-size: 22px;
+    line-height: 1.8;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* ================= FOOTER ================= */
+
+.rodape-vagas {
+    background-color: rgb(51, 78, 159);
+    color: white;
+    padding: 15px 20px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.rodape-conteudo p {
+    margin: 0;
+    color: white;
+}
+
+/* ================= RESPONSIVO ================= */
+
+@media (max-width: 800px) {
+
+    .titulo-banner-sobre {
+        font-size: 38px;
+    }
+
+    .texto-banner-sobre {
+        font-size: 17px;
+    }
+
+    .titulo-secao-sobre {
+        font-size: 32px;
+    }
+
+    .container-projeto {
+        padding: 30px 25px;
+    }
+
+    .texto-projeto {
+        font-size: 16px;
+    }
+
+    .container-compromisso {
+        padding: 40px 25px;
+    }
+
+    .container-compromisso h2 {
+        font-size: 32px;
+    }
+
+    .container-compromisso p {
+        font-size: 18px;
+    }
+
+    .container-equipe {
+        grid-template-columns: 1fr;
+    }
+
+    .container-objetivos {
+        grid-template-columns: 1fr;
+    }
+
+}

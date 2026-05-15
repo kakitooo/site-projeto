@@ -1,11 +1,135 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+
+    <title>Conecta Singular - Login</title>
+
+    <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="style/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body>
-    
+
+<body class="pagina-login">
+
+    <!-- ================= MENU ================= -->
+
+    <nav>
+
+        <ul class="menu">
+
+            <li class="logo">
+                <a href="index.html">
+                    <img src="images/logo-home.png" alt="Logo Conecta Singular">
+                </a>
+            </li>
+
+            <li>
+                <a class="botao1" href="index.html">
+                    INÍCIO
+                </a>
+            </li>
+
+            <li>
+                <a class="botao2" href="vagas.html">
+                    VAGAS
+                </a>
+            </li>
+
+            <li>
+                <a class="botao3" href="sobreoprojeto.html">
+                    SOBRE O PROJETO
+                </a>
+            </li>
+
+            <li>
+                <a class="botao4" href="contatos.html">
+                    CONTATOS
+                </a>
+            </li>
+
+            <li>
+                <a class="botao5" href="quemsomos.html">
+                    QUEM SOMOS
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <!-- ================= LOGIN ================= -->
+
+    <section class="secao-login">
+
+        <div class="card-login">
+
+            <h1 class="titulo-login">
+                Bem-vindo
+            </h1>
+
+            <p class="texto-login">
+                Faça login para acessar sua conta no Conecta Singular.
+            </p>
+
+            <form class="form-login">
+
+                <!-- EMAIL -->
+
+                <div class="grupo-input">
+
+                    <label for="email">
+                        E-mail
+                    </label>
+
+                    <input 
+                        type="email"
+                        id="email"
+                        placeholder="Digite seu e-mail"
+                        required
+                    >
+
+                </div>
+
+                <!-- SENHA -->
+
+                <div class="grupo-input">
+
+                    <label for="senha">
+                        Senha
+                    </label>
+
+                    <input 
+                        type="password"
+                        id="senha"
+                        placeholder="Digite sua senha"
+                        required
+                    >
+
+                </div>
+
+                <!-- BOTÃO -->
+
+                <button type="submit" class="botao-login">
+
+                    <i class="fa-solid fa-right-to-bracket"></i>
+
+                    Entrar
+
+                </button>
+                <p class="texto-cadastro">
+               Não possui conta? <a href="cadastro.html"> Cadastre-se</a></p>
+            </form>
+
+        </div>
+
+    </section>
+    <script src="scripts/login.js"></script>
 </body>
+
 </html>

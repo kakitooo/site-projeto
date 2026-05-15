@@ -1,0 +1,199 @@
+/*Estilização do Menu*/
+
+.menu {
+    background-color: rgb(51, 78, 159);
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 19px;
+}
+
+.menu li {
+    margin: 0;
+}
+
+.menu a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    text-align: justify;
+    font-weight: 500;
+    background-color: rgb(51, 78, 159);
+    position: relative;
+}
+
+.menu .botao-entrar {
+    background-color: rgb(30, 177, 30);
+    border-radius: 30px;
+    padding: 8px 16px;
+}
+.menu .botao-sair {
+    background-color: rgb(181, 16, 16);
+    border-radius: 30px;
+    padding: 8px 16px;
+}
+
+.logo img {
+    height: 80px;
+    width: auto;
+}
+
+.logo a {
+    padding: 0;
+}
+
+/*Estilização dos Botões - Quando passar o mouse*/
+
+.botao1:hover {
+    background-color: rgb(131, 188, 85);
+    border-radius: 5px;
+    padding: 25px 25px;
+}
+
+.botao1:hover::after {
+    content: "";
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 30px;
+    border-radius: 20%;
+    background: rgb(131, 188, 85);
+}
+
+.botao1:hover::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 30px;
+    border-radius: 20%;
+    background: rgb(131, 188, 85);
+}
+
+.botao2:hover {
+    background-color: rgb(240, 69, 69);
+    border-radius: 5px;
+    padding: 25px 25px;
+}
+
+.botao2:hover::after {
+    content: "";
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 30px;
+    border-radius: 20%;
+    background: rgb(240, 69, 69);
+}
+
+.botao2:hover::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 30px;
+    border-radius: 20%;
+    background: rgb(240, 69, 69);
+}
+
+.botao3:hover {
+    background-color: rgb(218, 195, 80);
+    border-radius: 5px;
+    padding: 25px 25px;
+}
+
+.botao3:hover::after {
+    content: "";
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 30px;
+    border-radius: 20%;
+    background: rgb(218, 195, 80);
+}
+
+.botao3:hover::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 30px;
+    border-radius: 20%;
+    background: rgb(218, 195, 80);
+}
+
+.botao4:hover {
+    background-color: rgb(119, 190, 235);
+    border-radius: 5px;
+    padding: 25px 25px;
+}
+
+.botao4:hover::after {
+    content: "";
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 30px;
+    border-radius: 20%;
+    background: rgb(119, 190, 235);
+}
+
+.botao4:hover::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 30px;
+    border-radius: 20%;
+    background: rgb(119, 190, 235);
+}
+
+/*Estilização do botão Entrar*/
+
+.botao-entrar {
+    background-color: green;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.botao-entrar:hover {
+    background-color: #b51414;
+}
+.botao-sair {
+    background-color: green;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.botao-sair:hover {
+    background-color: #e05f5d;
+}
