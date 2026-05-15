@@ -1,0 +1,92 @@
+.pagina-cadastro {
+    background: radial-gradient(circle at top, #e6e6eb, rgb(211, 211, 215));
+}
+
+/* ================= CONTAINER ================= */
+
+.cadastro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+/* ================= FORM ================= */
+
+.form-cadastro {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    border-top: 8px solid rgb(85, 215, 131);
+}
+
+.form-cadastro h1 {
+    text-align: center;
+    color: rgb(28, 98, 164);
+    margin-bottom: 25px;
+}
+
+/* ================= INPUTS ================= */
+
+.grupo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.grupo label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.grupo input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.grupo input:focus {
+    border-color: rgb(28, 98, 164);
+}
+
+/* ================= BOTÃO ================= */
+
+.btn-cadastrar {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(28, 98, 164);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn-cadastrar:hover {
+    background-color: rgb(20, 80, 140);
+}
+
+/* ================= LINK ================= */
+.texto-cadastro {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+    font-size: 15px;
+}
+
+.texto-cadastro a {
+    color: rgb(28, 98, 164);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.texto-cadastro a:hover {
+    color: rgb(85, 215, 131);
+}

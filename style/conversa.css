@@ -1,0 +1,114 @@
+body {
+    background: radial-gradient(circle at top, #e6e6eb, rgb(211, 211, 215));
+}
+
+/* ================= HEADER ================= */
+
+.chat-header {
+    background-color: rgba(28, 98, 164, 0.6);
+    padding: 50px 20px;
+    text-align: center;
+    border-bottom: 4px solid rgb(85, 215, 131);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.chat-header h1 {
+    color: white;
+    font-size: 42px;
+    margin-bottom: 8px;
+}
+
+.chat-header p {
+    color: #e0e0e0;
+    font-size: 16px;
+}
+
+/* ================= CHAT BOX ================= */
+
+.chat-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+/* ================= MENSAGENS ================= */
+
+.mensagem {
+    max-width: 70%;
+    padding: 15px 18px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* usuário (direita) */
+.usuario {
+    background-color: rgb(28, 98, 164);
+    color: white;
+    margin-left: auto;
+    border-bottom-right-radius: 4px;
+}
+
+/* empresa (esquerda) */
+.empresa {
+    background-color: white;
+    color: #333;
+    border: 1px solid #ddd;
+    border-bottom-left-radius: 4px;
+}
+
+/* status tags */
+
+.status {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.aprovado {
+    background: #28a745;
+    color: white;
+}
+
+.analise {
+    background: #ffb300;
+    color: white;
+}
+
+.reprovado {
+    background: #dc3545;
+    color: white;
+}
+
+/* botão voltar */
+
+.voltar {
+    display: block;
+    text-align: center;
+    margin: 40px auto;
+    text-decoration: none;
+    background-color: rgb(36, 145, 56);
+    color: white;
+    padding: 12px 20px;
+    width: fit-content;
+    border-radius: 8px;
+}
+
+/* ================= FOOTER ================= */
+
+.rodape-contatos {
+    background-color: rgb(51, 78, 159);
+    padding: 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.rodape-conteudo p {
+    color: white;
+    margin: 0;
+}

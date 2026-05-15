@@ -8,7 +8,7 @@ form.addEventListener("submit", function(event) {
     const senha = document.getElementById("senha").value;
 
     // LOGIN FICTÍCIO
-    const emailCorreto = "teosantos@gmail.com";
+    const emailCorreto = "pedrohenrique@gmail.com";
     const senhaCorreta = "123456";
 
     if(email === emailCorreto && senha === senhaCorreta) {

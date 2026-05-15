@@ -197,3 +197,17 @@
 .botao-sair:hover {
     background-color: #e05f5d;
 }
+
+/* ================= FOOTER ================= */
+
+.rodape-contatos {
+    background-color: rgb(51, 78, 159);
+    padding: 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.rodape-conteudo p {
+    color: white;
+    margin: 0;
+}

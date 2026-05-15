@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    background-color: rgb(211, 211, 215);
+}
+
+/* ================= BANNER ================= */
+
+.banner-contatos {
+    background-color: rgba(28, 98, 164, 0.6);
+    padding: 70px 20px;
+    text-align: center;
+    border-bottom: 4px solid rgb(85, 215, 131);
+}
+
+.titulo-banner {
+    color: white;
+    font-size: 58px;
+    margin-bottom: 15px;
+}
+
+.texto-banner {
+    color: #f1f1f1;
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ================= CARDS ================= */
+
+.secao-contatos {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.container-contatos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+}
+
+.card-contato {
+    background-color: white;
+    border-radius: 15px;
+    padding: 35px 25px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.card-azul {
+    border-top: 8px solid #0056b3;
+}
+
+.card-verde {
+    border-top: 8px solid #28a745;
+}
+
+.card-amarelo {
+    border-top: 8px solid #ffb300;
+}
+
+.card-vermelho {
+    border-top: 8px solid #dc3545;
+}
+
+.icone-contato {
+    font-size: 45px;
+    color: rgb(28, 98, 164);
+    margin-bottom: 20px;
+}
+
+.card-contato h2 {
+    color: rgb(28, 98, 164);
+    margin-bottom: 15px;
+}
+
+.card-contato p {
+    color: #444;
+    font-size: 17px;
+}
+
+/* ================= OUVIDORIA ================= */
+
+.secao-ouvidoria {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.container-ouvidoria {
+    background-color: white;
+    border-radius: 18px;
+    padding: 50px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.titulo-ouvidoria {
+    color: rgb(28, 98, 164);
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.texto-ouvidoria {
+    text-align: center;
+    color: #555;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.telefone-ouvidoria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(28, 98, 164);
+}
+
+/* ================= FORM ================= */
+
+.form-ouvidoria {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.grupo-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.grupo-input label {
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 600;
+}
+
+.grupo-input input,
+.grupo-input select,
+.grupo-input textarea {
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.grupo-input textarea {
+    resize: none;
+}
+
+.botao-enviar {
+    background-color: rgb(28, 98, 164);
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao-enviar:hover {
+    background-color: rgb(21, 73, 122);
+}
+
+/* ================= RESPONSIVO ================= */
+
+@media (max-width: 800px) {
+
+    .titulo-banner {
+        font-size: 38px;
+    }
+
+    .texto-banner {
+        font-size: 17px;
+    }
+
+    .container-ouvidoria {
+        padding: 30px 20px;
+    }
+
+    .titulo-ouvidoria {
+        font-size: 30px;
+    }
+
+}
