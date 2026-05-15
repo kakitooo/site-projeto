@@ -1,11 +1,303 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vagas</title>
-</head>
-<body>
+    <title>Conecta Singular - Vagas</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
+</head>
+
+<body class="pagina-vagas">
+
+    <!-- ================= HEADER ================= -->
+    <nav>
+        <ul class="menu">
+            <li class="logo">
+                <a href="index.html">
+                    <img src="images/logo-home.png" alt="Logo Conecta Singular">
+                </a>
+            </li>
+            <li><a class="botao1" href="index.html">INICIO</a></li>
+            <li><a class="botao2" href="sobreoprojeto.html">SOBRE O PROJETO</a></li>
+            <li><a class="botao3" href="contatos.html">CONTATOS</a></li>
+            <li><a class="botao4" href="quemsomos.html">QUEM SOMOS</a></li>
+            <li>
+                <a class="botao-entrar" href="login.html">
+                    <i class="fa-solid fa-right-to-bracket"></i> ENTRAR
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+    <section class="secao-banner-vagas">
+        <h1 class="titulo-banner-vagas">Vagas Disponíveis</h1>
+        <p class="descricao-banner-vagas">Encontre a oportunidade ideal para o seu perfil e habilidades.</p>
+    </section>
+
+    <!-- ================= BUSCA ================= -->
+    <section class="secao-busca-vagas">
+        <div class="busca-container">
+            <i class="fa-solid fa-magnifying-glass busca-icone"></i>
+            <input type="text" id="input-busca" placeholder="Busque por vagas, tags ou áreas...">
+        </div>
+    </section>
+
+    <!-- ================= CARDS ================= -->
+    <section class="secao-cards-vagas">
+
+        <!-- ===== CARD 1 ===== -->
+        <article class="card-vaga card-vaga-azul">
+            <h2 class="card-vaga-titulo">Tecnologia da Informação</h2>
+            <div class="card-vaga-empresa">
+                <i class="fa-solid fa-building card-vaga-empresa-icone"></i>
+                <span class="card-vaga-empresa-texto">Tech Solutions</span>
+            </div>
+            <div class="card-vaga-tags">
+                <span class="card-vaga-tag">Informática</span>
+                <span class="card-vaga-tag">Lógica</span>
+                <span class="card-vaga-tag">Concentração</span>
+            </div>
+            <p class="card-vaga-descricao">Vagas para trabalhar com uso de computadores, suporte técnico ou organização de sistemas virtuais, em um ambiente focado e silencioso.</p>
+            <button class="card-vaga-botao">Candidatar-se</button>
+        </article>
+
+        <!-- ===== CARD 2 ===== -->
+        <article class="card-vaga card-vaga-amarelo">
+            <h2 class="card-vaga-titulo">Auxiliar Administrativo</h2>
+            <div class="card-vaga-empresa">
+                <i class="fa-solid fa-building card-vaga-empresa-icone"></i>
+                <span class="card-vaga-empresa-texto">InovaTech</span>
+            </div>
+            <div class="card-vaga-tags">
+                <span class="card-vaga-tag">Organização</span>
+                <span class="card-vaga-tag">Documentos</span>
+                <span class="card-vaga-tag">Rotina</span>
+            </div>
+            <p class="card-vaga-descricao">Oportunidades para trabalhar em escritório, cuidando da organização de documentos, planilhas e rotinas diárias muito bem definidas.</p>
+            <button class="card-vaga-botao">Candidatar-se</button>
+        </article>
+
+        <!-- ===== CARD 3 ===== -->
+        <article class="card-vaga card-vaga-verde">
+            <h2 class="card-vaga-titulo">Arte e Criação</h2>
+            <div class="card-vaga-empresa">
+                <i class="fa-solid fa-building card-vaga-empresa-icone"></i>
+                <span class="card-vaga-empresa-texto">Creative Studio</span>
+            </div>
+            <div class="card-vaga-tags">
+                <span class="card-vaga-tag">Desenho</span>
+                <span class="card-vaga-tag">Criatividade</span>
+                <span class="card-vaga-tag">Visual</span>
+            </div>
+            <p class="card-vaga-descricao">Vagas para pessoas detalhistas que gostam de lidar com imagens, cores e ajudar na organização de peças gráficas.</p>
+            <button class="card-vaga-botao">Candidatar-se</button>
+        </article>
+
+        <!-- ===== CARD 4 ===== -->
+        <article class="card-vaga card-vaga-vermelho">
+            <h2 class="card-vaga-titulo">Apoio Interno</h2>
+            <div class="card-vaga-empresa">
+                <i class="fa-solid fa-building card-vaga-empresa-icone"></i>
+                <span class="card-vaga-empresa-texto">Data Insights</span>
+            </div>
+            <div class="card-vaga-tags">
+                <span class="card-vaga-tag">Digitação</span>
+                <span class="card-vaga-tag">Escrita</span>
+                <span class="card-vaga-tag">Atenção</span>
+            </div>
+            <p class="card-vaga-descricao">Procuramos pessoas focadas para ajudar com entrada de dados, verificação de formulários e auxílio geral em processos internos.</p>
+            <button class="card-vaga-botao">Candidatar-se</button>
+        </article>
+
+        <!-- ===== CARD 5 ===== -->
+        <article class="card-vaga card-vaga-azul">
+            <h2 class="card-vaga-titulo">Logística e Organização</h2>
+            <div class="card-vaga-empresa">
+                <i class="fa-solid fa-building card-vaga-empresa-icone"></i>
+                <span class="card-vaga-empresa-texto">LoggiFlow</span>
+            </div>
+            <div class="card-vaga-tags">
+                <span class="card-vaga-tag">Controle</span>
+                <span class="card-vaga-tag">Separação</span>
+                <span class="card-vaga-tag">Rotina</span>
+            </div>
+            <p class="card-vaga-descricao">Oportunidade para organizar o fluxo de entregas e mercadorias em um ambiente prático e metódico.</p>
+            <button class="card-vaga-botao">Candidatar-se</button>
+        </article>
+
+        <!-- ===== CARD 6 ===== -->
+        <article class="card-vaga card-vaga-amarelo">
+            <h2 class="card-vaga-titulo">Recepção</h2>
+            <div class="card-vaga-empresa">
+                <i class="fa-solid fa-building card-vaga-empresa-icone"></i>
+                <span class="card-vaga-empresa-texto">Clínica Bem-Estar</span>
+            </div>
+            <div class="card-vaga-tags">
+                <span class="card-vaga-tag">Atendimento</span>
+                <span class="card-vaga-tag">Organização</span>
+            </div>
+            <p class="card-vaga-descricao">Vaga voltada para o acolhimento de visitantes e organização de agendas, com escopo de atividades claro e estruturado.</p>
+            <button class="card-vaga-botao">Candidatar-se</button>
+        </article>
+
+        <!-- ===== CARD 7 ===== -->
+        <article class="card-vaga card-vaga-verde">
+            <h2 class="card-vaga-titulo">Operador de Dados</h2>
+            <div class="card-vaga-empresa">
+                <i class="fa-solid fa-building card-vaga-empresa-icone"></i>
+                <span class="card-vaga-empresa-texto">Tech Solutions</span>
+            </div>
+            <div class="card-vaga-tags">
+                <span class="card-vaga-tag">Números</span>
+                <span class="card-vaga-tag">Foco</span>
+                <span class="card-vaga-tag">Repetição</span>
+            </div>
+            <p class="card-vaga-descricao">Excelente vaga para quem tem grande capacidade de concentração, voltada à revisão de dados em sistemas gerenciais.</p>
+            <button class="card-vaga-botao">Candidatar-se</button>
+        </article>
+
+        <!-- ===== CARD 8 ===== -->
+        <article class="card-vaga card-vaga-vermelho">
+            <h2 class="card-vaga-titulo">Estoquista</h2>
+            <div class="card-vaga-empresa">
+                <i class="fa-solid fa-building card-vaga-empresa-icone"></i>
+                <span class="card-vaga-empresa-texto">Supermercados Local</span>
+            </div>
+            <div class="card-vaga-tags">
+                <span class="card-vaga-tag">Organização</span>
+                <span class="card-vaga-tag">Praticidade</span>
+            </div>
+            <p class="card-vaga-descricao">Vaga prática e de contato visual mínimo, ideal para quem prefere organizar estoques de forma lógica e sequencial.</p>
+            <button class="card-vaga-botao">Candidatar-se</button>
+        </article>
+
+        <!-- ===== CARD 9 ===== -->
+        <article class="card-vaga card-vaga-azul">
+            <h2 class="card-vaga-titulo">Assistente de Qualidade</h2>
+            <div class="card-vaga-empresa">
+                <i class="fa-solid fa-building card-vaga-empresa-icone"></i>
+                <span class="card-vaga-empresa-texto">Indústria Master</span>
+            </div>
+            <div class="card-vaga-tags">
+                <span class="card-vaga-tag">Atenção</span>
+                <span class="card-vaga-tag">Regras</span>
+            </div>
+            <p class="card-vaga-descricao">Procuramos profissionais detalhistas para conferência de produtos conforme padrões rígidos de qualidade.</p>
+            <button class="card-vaga-botao">Candidatar-se</button>
+        </article>
+
+        <!-- ===== CARD 10 ===== -->
+        <article class="card-vaga card-vaga-amarelo">
+            <h2 class="card-vaga-titulo">Suporte Técnico</h2>
+            <div class="card-vaga-empresa">
+                <i class="fa-solid fa-building card-vaga-empresa-icone"></i>
+                <span class="card-vaga-empresa-texto">InovaTech</span>
+            </div>
+            <div class="card-vaga-tags">
+                <span class="card-vaga-tag">Chat</span>
+                <span class="card-vaga-tag">Escrita</span>
+                <span class="card-vaga-tag">Problemas</span>
+            </div>
+            <p class="card-vaga-descricao">Atendimento 100% via chat e e-mail. Ideal para pessoas comunicativas através da escrita e boas com resolução passo a passo.</p>
+            <button class="card-vaga-botao">Candidatar-se</button>
+        </article>
+
+        <!-- ===== CARD 11 ===== -->
+        <article class="card-vaga card-vaga-verde">
+            <h2 class="card-vaga-titulo">Organização de Arquivos</h2>
+            <div class="card-vaga-empresa">
+                <i class="fa-solid fa-building card-vaga-empresa-icone"></i>
+                <span class="card-vaga-empresa-texto">Cartório Central</span>
+            </div>
+            <div class="card-vaga-tags">
+                <span class="card-vaga-tag">Físico</span>
+                <span class="card-vaga-tag">Silêncio</span>
+            </div>
+            <p class="card-vaga-descricao">Trabalho em ambiente altamente silencioso, voltado para indexação e guarda de documentos impressos e livros.</p>
+            <button class="card-vaga-botao">Candidatar-se</button>
+        </article>
+
+        <!-- ===== CARD 12 ===== -->
+        <article class="card-vaga card-vaga-vermelho">
+            <h2 class="card-vaga-titulo">Editor de Conteúdo</h2>
+            <div class="card-vaga-empresa">
+                <i class="fa-solid fa-building card-vaga-empresa-icone"></i>
+                <span class="card-vaga-empresa-texto">Agência Letras</span>
+            </div>
+            <div class="card-vaga-tags">
+                <span class="card-vaga-tag">Revisão</span>
+                <span class="card-vaga-tag">Leitura</span>
+            </div>
+            <p class="card-vaga-descricao">Revisão ortográfica e formatação de textos longos. Requer forte atenção a regras gramaticais e detalhes textuais.</p>
+            <button class="card-vaga-botao">Candidatar-se</button>
+        </article>
+
+        <!-- ===== CARD 13 ===== -->
+        <article class="card-vaga card-vaga-azul">
+            <h2 class="card-vaga-titulo">Auxiliar de Finanças</h2>
+            <div class="card-vaga-empresa">
+                <i class="fa-solid fa-building card-vaga-empresa-icone"></i>
+                <span class="card-vaga-empresa-texto">Banco Capital</span>
+            </div>
+            <div class="card-vaga-tags">
+                <span class="card-vaga-tag">Matemática</span>
+                <span class="card-vaga-tag">Planilhas</span>
+            </div>
+            <p class="card-vaga-descricao">Funções metódicas envolvendo cálculos, consolidação de dados financeiros e verificação contábil rigorosa.</p>
+            <button class="card-vaga-botao">Candidatar-se</button>
+        </article>
+
+        <!-- ===== CARD 14 ===== -->
+        <article class="card-vaga card-vaga-amarelo">
+            <h2 class="card-vaga-titulo">Curadoria de Produtos</h2>
+            <div class="card-vaga-empresa">
+                <i class="fa-solid fa-building card-vaga-empresa-icone"></i>
+                <span class="card-vaga-empresa-texto">E-commerce Plus</span>
+            </div>
+            <div class="card-vaga-tags">
+                <span class="card-vaga-tag">Padrões</span>
+                <span class="card-vaga-tag">Categorias</span>
+            </div>
+            <p class="card-vaga-descricao">Cadastro de produtos, aplicação de categorias e verificação de imagens conforme diretrizes estritas da loja virtual.</p>
+            <button class="card-vaga-botao">Candidatar-se</button>
+        </article>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="rodape-vagas">
+        <div class="rodape-conteudo">
+            <p>&copy; 2026 Conecta Singular. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- ================= MODAL DE VAGA ================= -->
+    <div id="modal-vaga" class="modal-overlay">
+        <div class="modal-conteudo">
+            <span class="modal-fechar"><i class="fa-solid fa-xmark"></i></span>
+            <h2 id="modal-titulo">Título da Vaga</h2>
+            <div class="modal-info">
+                <p><i class="fa-solid fa-clock"></i> <strong>Carga Horária:</strong> 6 horas diárias</p>
+                <p><i class="fa-solid fa-heart"></i> <strong>Benefícios:</strong> Vale-Transporte, Ambiente Inclusivo e Silencioso.</p>
+                <p><i class="fa-solid fa-location-dot"></i> <strong>Local:</strong> Presencial Adaptado.</p>
+            </div>
+            <p class="modal-texto-ajuda">Revise os detalhes acima. Ao confirmar, seu perfil será enviado para a empresa de forma segura.</p>
+            <button id="modal-btn-confirmar" class="modal-btn">Confirmar Candidatura</button>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="scripts/module.js"></script>
 </body>
+
 </html>
